@@ -15,7 +15,7 @@ spec:
   source:
     repoURL: https://github.com/Abhin86/Nodejs-Application.git
     targetRevision: HEAD
-    path: ./apps/my-apps
+    path: ./apps/values
    
     # directory
     directory:
