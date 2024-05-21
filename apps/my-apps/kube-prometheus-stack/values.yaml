@@ -75,9 +75,9 @@ defaultRules:
     kubeSchedulerRecording: true
     kubeStateMetrics: true
     network: true
-    node: true
-    nodeExporterAlerting: true
-    nodeExporterRecording: true
+    node: false
+    nodeExporterAlerting: false
+    nodeExporterRecording: false
     prometheus: true
     prometheusOperator: true
     windows: true
@@ -2090,7 +2090,7 @@ kube-state-metrics:
 ## Deploy node exporter as a daemonset to all nodes
 ##
 nodeExporter:
-  enabled: false
+  enabled: true
   operatingSystems:
     linux:
       enabled: true
@@ -2153,7 +2153,7 @@ prometheus-node-exporter:
       ##
       scrapeTimeout: ""
 
-      ## proxyUrl: URL of a proxy that should be used for scraping.
+      ## proxyUrl: URL of a proxy thatgrafana-prometheus-node-exporter-v6h29 should be used for scraping.
       ##
       proxyUrl: ""
 
@@ -2361,7 +2361,7 @@ prometheusOperator:
         enabled: true
         failureThreshold: 3
         initialDelaySeconds: 30
-        periodSeconds: 10
+grafana-prometheus-node-exporter-v6h29        periodSeconds: 10
         successThreshold: 1
         timeoutSeconds: 1
 
